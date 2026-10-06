@@ -1,0 +1,9 @@
+# 依赖
+node_modules/
+
+# 构建产物
+dist/
+.vite/
+
+# 日志
+*.log

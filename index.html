@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>积木大脑 3D 模型</title>
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+  <div id="app">
+    <header id="topbar">
+      <div class="brand">积木大脑 3D 模型</div>
+      <div class="toolbar">
+        <button id="btn-reset" class="btn">重置</button>
+        <button id="btn-undo" class="btn">撤销</button>
+        <button id="btn-redo" class="btn">重做</button>
+      </div>
+      <div class="stat" id="stat"></div>
+      <div class="hint">左键点击选中 · 左键拖拽拆解/组装 · 右键拖拽旋转 · 滚轮缩放</div>
+    </header>
+
+    <div id="viewport"></div>
+
+    <aside id="sidebar">
+      <div class="sidebar-title">脑区列表</div>
+      <div id="region-list"></div>
+    </aside>
+
+    <footer id="detail"></footer>
+  </div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
